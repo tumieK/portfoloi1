@@ -1,7 +1,87 @@
-nav{
-    color:black;
-    background-color:aqua;
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-h1{
-    color:blue;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+.personal-details p, .contact-details p, .references ul li {
+    font-size: 1em;
+}
+
+.references ul {
+    list-style-type: none;
+}
+
+.references ul li {
+    margin-bottom: 10px;
+}
+
+/* Typography and text adjustments */
+strong {
+    font-weight: bold;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    section p {
+        font-size: 0.9em;
+    }
 }
