@@ -3,6 +3,10 @@
     box-sizing: border-box; /* Ensure padding and borders are included in the element's width and height */
 }
 
+html {
+    font-size: 16px; /* 1rem = 16px as the base font size */
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -13,11 +17,11 @@ body {
 
 .container {
     display: flex;
-    max-width: 1200px;
+    max-width: 75rem; /* 1200px */
     margin: 0 auto;
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 0 4px 8px */
     overflow: hidden;
     flex-wrap: wrap; /* Allows items to wrap on smaller screens */
     width: 100%; /* Ensure container takes full width on smaller screens */
@@ -27,7 +31,7 @@ body {
 .sidebar {
     background-color: #2c3e50; /* Navy Blue */
     color: #fff; /* White text */
-    padding: 30px;
+    padding: 1.875rem; /* 30px */
     width: 30%;
     box-sizing: border-box;
     display: flex;
@@ -40,11 +44,11 @@ body {
 }
 
 .profile-picture {
-    width: 150px;
-    height: 150px;
+    width: 9.375rem; /* 150px */
+    height: 9.375rem; /* 150px */
     border-radius: 50%;
-    margin-bottom: 20px;
-    border: 3px solid #fff; /* White border around the image */
+    margin-bottom: 1.25rem; /* 20px */
+    border: 0.1875rem solid #fff; /* 3px */
 }
 
 h1, h2 {
@@ -53,42 +57,42 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 1.8em;
+    font-size: 1.8rem;
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: normal;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem; /* 10px */
 }
 
 p {
-    font-size: 0.9em;
-    margin-bottom: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem; /* 20px */
     color: #b3b3b3; /* Lighter grey text */
 }
 
 .details h3 {
     color: #ecf0f1; /* Lighter white text for section headings */
-    margin-bottom: 10px;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 5px;
+    margin-bottom: 0.625rem; /* 10px */
+    border-bottom: 0.0625rem solid #fff; /* 1px */
+    padding-bottom: 0.3125rem; /* 5px */
 }
 
 .details ul {
     list-style-type: none;
     padding-left: 0;
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 
 .details ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem; /* 10px */
     color: #bdc3c7; /* Lighter grey for list items */
 }
 
 /* Main content styles */
 .content {
-    padding: 30px;
+    padding: 1.875rem; /* 30px */
     width: 70%;
     background-color: #ecf0f1; /* Very light grey background */
     box-sizing: border-box;
@@ -96,33 +100,33 @@ p {
 
 .content h3 {
     color: #2c3e50; /* Navy blue headings */
-    margin-bottom: 15px;
-    border-bottom: 1px solid #7f8c8d;
-    padding-bottom: 5px;
+    margin-bottom: 0.9375rem; /* 15px */
+    border-bottom: 0.0625rem solid #7f8c8d; /* 1px */
+    padding-bottom: 0.3125rem; /* 5px */
 }
 
 .content section {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px */
 }
 
 .content p {
-    font-size: 1em;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    margin-bottom: 0.625rem; /* 10px */
     color: #7f8c8d; /* Grey text */
 }
 
 .content ul {
-    padding-left: 20px;
+    padding-left: 1.25rem; /* 20px */
 }
 
 .content ul li {
     list-style-type: circle;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem; /* 5px */
     color: #2c3e50; /* Navy blue bullets */
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 48rem) { /* 768px */
     .container {
         flex-direction: column; /* Stack sidebar and content on smaller screens */
         width: 100%; /* Ensure container takes full screen width on mobile */
@@ -131,12 +135,12 @@ p {
     .sidebar {
         width: 100%; /* Full width for the sidebar on smaller screens */
         text-align: center;
-        padding: 20px;
+        padding: 1.25rem; /* 20px */
     }
 
     .content {
         width: 100%; /* Full width for the content on smaller screens */
-        padding: 20px;
+        padding: 1.25rem; /* 20px */
     }
 }
 
