@@ -1,4 +1,8 @@
 /* General styles */
+* {
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's width and height */
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -16,6 +20,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    width: 100%; /* Ensure container takes full width on smaller screens */
 }
 
 /* Sidebar styles */
@@ -120,16 +125,20 @@ p {
 @media (max-width: 768px) {
     .container {
         flex-direction: column; /* Stack sidebar and content on smaller screens */
+        width: 100%; /* Ensure container takes full screen width on mobile */
     }
 
     .sidebar {
-        width: 100%;
+        width: 100%; /* Full width for the sidebar on smaller screens */
         text-align: center;
         padding: 20px;
     }
 
     .content {
-        width: 100%;
+        width: 100%; /* Full width for the content on smaller screens */
         padding: 20px;
     }
 }
+
+/* Viewport Meta Tag in your HTML file */
+/* <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
