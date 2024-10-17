@@ -126,11 +126,17 @@ p {
 }
 
 /* Responsive Design */
-@media (max-width: 48rem) { /* 768px */
-    .container {
-        flex-direction: column; /* Stack sidebar and content on smaller screens */
-        width: 100%; /* Ensure container takes full screen width on mobile */
-    }
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures items wrap instead of overflowing */
+    justify-content: space-between;
+}
+
+.item {
+    flex: 1 1 auto; /* Makes items flexible and adaptive to available space */
+    margin: 10px;
+}
+
 
     .sidebar {
         width: 100%; /* Full width for the sidebar on smaller screens */
