@@ -126,7 +126,7 @@ p {
 }
 
 /* Responsive Design */
-.container {
+/* .container {
     display: flex;
     flex-wrap: wrap; /* Ensures items wrap instead of overflowing */
     justify-content: space-between;
@@ -135,7 +135,7 @@ p {
 .item {
     flex: 1 1 auto; /* Makes items flexible and adaptive to available space */
     margin: 10px;
-}
+} */
 
 
     .sidebar {
