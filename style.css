@@ -4,7 +4,7 @@
 }
 
 html {
-    font-size: 16px; /* 1rem = 16px as the base font size */
+    font-size: 16px; 
 }
 
 body {
@@ -17,14 +17,14 @@ body {
 
 .container {
     display: flex;
-    max-width: 75rem; /* 1200px */
+    max-width: 75rem;
     margin: 0 auto;
     background-color: #fff;
-    border-radius: 0.625rem; /* 10px */
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 0 4px 8px */
+    border-radius: 0.625rem; 
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
-    width: 100%; /* Ensure container takes full width on smaller screens */
+    flex-wrap: wrap;
+    width: 100%; 
 }
 
 /* Sidebar styles */
@@ -63,7 +63,7 @@ h1 {
 h2 {
     font-size: 1.2rem;
     font-weight: normal;
-    margin-bottom: 0.625rem; /* 10px */
+    margin-bottom: 0.625rem;
 }
 
 p {
