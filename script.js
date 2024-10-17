@@ -29,6 +29,3 @@ function someFunction(){
     // Append the cloned image to a container or somewhere in the DOM
     document.getElementById('clonedImagesContainer').appendChild(otherImage);
 }
-
-
-
