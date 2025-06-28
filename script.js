@@ -1,31 +1,31 @@
-let name="Hello there"
-console.log(name)
-/*name="haha"
+document.addEventListener("DOMContentLoaded", () => {
+    const pages = document.querySelectorAll(".page");
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
 
-let areas=Math.pow(5,2);
+    let current = 0;
 
-const person={
-  name: "Lerato",
-  surname: "Msholozi",
-}
-//Function
-printName:() =>  {
-  console.log("I'm a function")
-  
-} */
-  
-//console.log(person)
+    function showPage(index) {
+        pages.forEach((page, i) => {
+            page.classList.remove("active");
+            if (i === index) {
+                page.classList.add("active");
+            }
+        });
+    }
 
-function someFunction(){
-    // Get the image element you want to clone
-    let image = document.getElementById('imageToClone');
+    nextBtn.addEventListener("click", () => {
+        if (current < pages.length - 1) {
+            current++;
+            showPage(current);
+        }
+    });
 
-    // Clone the image element (true for deep cloning)
-    let otherImage = image.cloneNode(true);
-
-    // Optional: Remove the id from the cloned image to avoid duplicate IDs
-    otherImage.id = '';
-
-    // Append the cloned image to a container or somewhere in the DOM
-    document.getElementById('clonedImagesContainer').appendChild(otherImage);
-}
+    prevBtn.addEventListener("click", () => {
+        if (current > 0) {
+            current--;
+            showPage(current);
+        }
+    });
+    showPage(current);
+});
