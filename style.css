@@ -1,51 +1,281 @@
-.book {
-    position: relative;
-    width: 700px;
-    height: auto;
-    perspective: 1500px;
-    overflow: hidden;
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #031926;
+  color: white;
 }
 
-.page {
-    background: #2e2e3e;
-    padding: 2rem;
-    border-radius: 1rem;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    transform-origin: left;
-    transform: rotateY(0deg);
-    transition: transform 0.8s ease-in-out;
-    z-index: 1;
-    opacity: 0;
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #021017;
 }
 
-.page.active {
-    z-index: 2;
-    opacity: 1;
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
 }
 
-.navigation {
-    margin-top: 20px;
-    text-align: center;
+.nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
 }
 
-.navigation button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-weight: bold;
-    border: none;
-    background: #ff4f81;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 60px 40px;
+}
+.hero-image img {
+  width: 250px; /* or adjust as needed */
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%; /* Makes the image round */
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.3); /* Optional glow effect */
+  border: 3px solid #00bcd4; /* Optional colored border */
 }
 
-.navigation button:hover {
-    background: #ff7b9c;
+
+.hero-text {
+  flex: 1;
 }
+
+.hero-text h1 {
+  font-size: 48px;
+}
+
+.hero-text span {
+  color: #00bcd4;
+}
+
+.hero-text h3 {
+  color: #00bcd4;
+  margin-top: -10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn.primary {
+  background-color: #00bcd4;
+  color: black;
+}
+
+.btn.outline {
+  border: 2px solid #00bcd4;
+  color: #00bcd4;
+  background: transparent;
+}
+
+.hero-image img {
+  width: 400px;
+  border-radius: 15px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two per row */
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #021017;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 188, 212, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background-color: #0000; 
+  display: block;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #00bcd4;
+}
+
+.card-content p {
+  font-size: 16px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.footer {
+  background-color: #031926;
+  border-top: 1px solid #00bcd4;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-text {
+  color: #bbb;
+  font-size: 14px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socials a {
+  color: #00bcd4;
+  font-size: 22px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+ .experience-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin: 40px auto;
+      max-width: 900px;
+      padding: 0 20px;
+    }
+
+    .experience-card {
+      background-color: #021017;
+      border-left: 5px solid #00bcd4;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 188, 212, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .experience-card h3 {
+      color: #00bcd4;
+      margin-bottom: 10px;
+    }
+
+    .experience-card p {
+      line-height: 1.6;
+      font-size: 16px;
+      color: #ddd;
+    }
+
+    .experience-card strong {
+      color: #00bcd4;
+    }
+
+    .contact-container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+      background-color: #021017;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 188, 212, 0.2);
+    }
+
+    .contact-container h2 {
+      font-size: 32px;
+      color: #00bcd4;
+      margin-bottom: 20px;
+    }
+
+    .contact-item {
+      font-size: 18px;
+      margin: 15px 0;
+      color: #ddd;
+    }
+
+    .contact-item i {
+      color: #00bcd4;
+      margin-right: 10px;
+    }
+
+    .contact-item a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    .about-container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .about-text {
+      flex: 1;
+      font-size: 18px;
+      line-height: 1.8;
+      max-width: 600px;
+    }
+
+    .about-text strong {
+      color: #00bcd4;
+    }
+
+    .about-image {
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 188, 212, 0.2);
+    }
+
+    .btn-download {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #00bcd4;
+      color: #000;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn-download:hover {
+      background-color: #019aad;
+    }
